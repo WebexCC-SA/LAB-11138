@@ -30,7 +30,7 @@ Lab Objectives:
 
 <p class="lab-step">• Before you begin, let's start by understanding the key differences and capabilities of Webex Calling Call Queues and Webex Calling Customer Assist</p>
 
-<img alt="" src="./assets/image9.png" loading="lazy">
+![](./assets/image9.png)
 
 
 <br>
