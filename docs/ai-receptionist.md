@@ -52,15 +52,15 @@ Location: dCloud
 
 AI Receptionist Name: Healthcare AI Receptionist
 
-Phone number: {{Choose a number from the drop-down}}
+Phone number: Choose a number from the drop-down
 
 AI Engine: Webex AI Pro US 1.0
 
 AI Receptionist Language: English (United States)
 
-AI Receptionist Voice: {{Any of your choice}}
+AI Receptionist Voice: Any of your choice
 
-Direct line caller ID Name: {{Choose the Display name}}
+Direct line caller ID Name: Choose the Display name
 
 ![Screenshot](./assets/image88.png)
 

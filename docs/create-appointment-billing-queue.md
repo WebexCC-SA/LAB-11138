@@ -28,7 +28,7 @@ The agent and supervisor for this queue are
 <tr><td markdown="span">Queue Name</td><td markdown="span">Appointment Billing</td></tr>
 <tr><td markdown="span">Phone Number</td><td markdown="span">3001</td></tr>
 <tr><td markdown="span">Number of calls in queue</td><td markdown="span">10</td></tr>
-<tr><td markdown="span">Direct line Caller ID name</td><td markdown="span">{{Display Name}}</td></tr>
+<tr><td markdown="span">Direct line Caller ID name</td><td markdown="span">Display Name</td></tr>
 <tr><td markdown="span">External caller ID phone number</td><td markdown="span">{Select Location Number}</td></tr>
 <tr><td markdown="span">Language</td><td markdown="span">English</td></tr>
 </table></div>
@@ -51,7 +51,7 @@ Screen pop is a Customer Assist Feature. Enabling this feature will open/pop up 
 <tr><td markdown="span">Screen Pop URL</td><td markdown="span"><a href="https://www.truepeoplesearch.com/resultphone">https://www.truepeoplesearch.com/resultphone</a></td></tr>
 <tr><td markdown="span">Screen Pop Desktop Label</td><td markdown="span">People Search</td></tr>
 <tr><td markdown="span">Key 1</td><td markdown="span">Phoneno</td></tr>
-<tr><td markdown="span">Value 1</td><td markdown="span">{{NewPhoneContact.ANI}}</td></tr>
+<tr><td markdown="span">Value 1</td><td markdown="span">NewPhoneContact.ANI</td></tr>
 </table></div>
 
 With this, every time an Agent answering the call from the queue – they will see a screen pop automatically open and show a True people search on the Calling party number (ANI).  This is just an example, similarly you can setup the URL to your own application to open customer data based on various variables.
