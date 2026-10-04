@@ -102,20 +102,33 @@ nav:
       - "Testing and Verification": "testing-and-verification.md"
       - "Access Customer assist queue recordings": "queue-recordings.md"
       - "Webex Calling Customer Assist Analytics and Reporting": "analytics-and-reporting.md"
-  - Lab:
-      - Overview: overview.md
-      - Lab 1 - Getting Started: lab1_getting_started.md
-      - Conclusion: conclusion.md
-  - Topologies: topologies.md
-  - How to use this guide:
-      - Setting up and using the tool:
-        - Initial Setup: howToUse/initialSetup.md
-        - Using the tool after the initial setup: howToUse/postInitial.md
-        - Publishing your changes: howToUse/syncChanges.md
-      - Useful Tools and Resources: howToUse/usefulTools.md
-      - Importing from Word (docx): howToUse/importingFromWord.md
-      - Styling and Advanced Features:
-        - Custom Features: howToUse/customFeatures.md
-        - Custom Admonitions: howToUse/admonition.md
-      - Looking for Inspiration: howToUse/previousEventLabs.md
-      - Before the Event: howToUse/beforeTheEvent.md
+  - "Retail":
+      - "Retail": "retail.md"
+      - "Licensing users for Customer Assist": "rlicensing-users.md"
+      - "Create Sales/Order queue": "rcreate-sales-order-queue.md"
+      - "Enabling Call Recording for Sales/Order queue": "rcall-recording.md"
+      - "Adding Supervisor to Sales/Order queue": "radding-supervisor.md"
+      - "Wrap up reason": "rwrap-up-reason.md"
+      - "Create Support queue": "rcreate-support-queue.md"
+      - "AI Receptionist": "rai-receptionist.md"
+      - "Enabling AI Features in Webex Calling": "renabling-ai-features.md"
+      - "Testing and Verification": "rtesting-and-verification.md"
+      - "Access Customer assist queue recordings": "rqueue-recordings.md"
+      - "Webex Calling Customer Assist Analytics and Reporting": "ranalytics-and-reporting.md"
+#  - Lab:
+#      - Overview: overview.md
+#      - Lab 1 - Getting Started: lab1_getting_started.md
+#      - Conclusion: conclusion.md
+#  - Topologies: topologies.md
+#  - How to use this guide:
+#      - Setting up and using the tool:
+#        - Initial Setup: howToUse/initialSetup.md
+#        - Using the tool after the initial setup: howToUse/postInitial.md
+#        - Publishing your changes: howToUse/syncChanges.md
+#      - Useful Tools and Resources: howToUse/usefulTools.md
+#      - Importing from Word (docx): howToUse/importingFromWord.md
+#      - Styling and Advanced Features:
+#        - Custom Features: howToUse/customFeatures.md
+#        - Custom Admonitions: howToUse/admonition.md
+#      - Looking for Inspiration: howToUse/previousEventLabs.md
+#      - Before the Event: howToUse/beforeTheEvent.md

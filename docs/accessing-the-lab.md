@@ -88,6 +88,6 @@ pane of glass portal to manage all Webex services.
 
 <br>
 
-[Healthcare](healthcare/index.md){ .md-button .md-button--primary }
+[Healthcare](healthcare.md){ .md-button .md-button--primary }
 
-[Retail](retail/index.md){ .md-button }
+[Retail](retail.md){ .md-button }
