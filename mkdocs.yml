@@ -89,6 +89,19 @@ nav:
   - About the Lab: "welcome.md"
   - "Lab Topology and Scenario": "lab-topology-and-scenario.md"
   - "Accessing the lab": "accessing-the-lab.md"
+  - "Healthcare":
+      - "Healthcare": "healthcare.md"
+      - "Licensing users for Customer Assist": "licensing-users.md"
+      - "Create Appointment/ Billing queue": "create-appointment-billing-queue.md"
+      - "Enabling Call Recording for Appointment Billing queue": "call-recording.md"
+      - "Adding Supervisor to Appointment Billing queue": "adding-supervisor.md"
+      - "Wrap up reason": "wrap-up-reason.md"
+      - "Create Nurse queue": "create-nurse-queue.md"
+      - "AI Receptionist": "ai-receptionist.md"
+      - "Enabling AI Features in Webex Calling": "enabling-ai-features.md"
+      - "Testing and Verification": "testing-and-verification.md"
+      - "Access Customer assist queue recordings": "queue-recordings.md"
+      - "Webex Calling Customer Assist Analytics and Reporting": "analytics-and-reporting.md"
   - Lab:
       - Overview: overview.md
       - Lab 1 - Getting Started: lab1_getting_started.md
