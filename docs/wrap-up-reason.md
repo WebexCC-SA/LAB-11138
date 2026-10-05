@@ -24,11 +24,11 @@ We will use the below Wrap-up reasons for the Agent(s) to select for the Appoint
 
 <p class="lab-step" markdown="1">61. Next to Set a default wrap-up time for the support queue- Under the Services section on the left panel select Customer Assist &gt; Queues and select the Appointment Billing Queue as shown in the screenshot below</p>
 
-![Screenshot](./assets/image62.png)<br>71. Go to Overview section and click Wrap-up reasons.
+![Screenshot](./assets/image62.png)<br>62. Go to Overview section and click Wrap-up reasons.
 
 ![Screenshot](./assets/image63.png)
 
-<p class="lab-step" markdown="1">72. From here you can see the assigned wrap-up reasons and the default option (in this example, Billing Enquiry). Enable the Wrap-up timer and the timer to 01:00 (1 minute) and then click on Save.</p>
+<p class="lab-step" markdown="1">63. From here you can see the assigned wrap-up reasons and the default option (in this example, Billing Enquiry). Enable the Wrap-up timer and the timer to 01:00 (1 minute) and then click on Save.</p>
 
 ![Screenshot](./assets/image64.png)
 
