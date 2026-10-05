@@ -214,7 +214,7 @@ Call recording allows you to record incoming and outgoing calls for your agents 
 
 We will use the below Wrap-up reasons for the Agent(s) to select for the Returns and Support queue
 
-<p class="lab-step" markdown="1">• Return / Refund Request</p>
+<p class="lab-step" markdown="1">• Return and Refund Request</p>
 
 <p class="lab-step" markdown="1">• Exchange / Replacement</p>
 
@@ -222,7 +222,7 @@ We will use the below Wrap-up reasons for the Agent(s) to select for the Returns
 
 ![Screenshot](./assets/image161.png)
 
-<p class="lab-step" markdown="1">93. On the Add wrap-up reason page, Create the Wrap up reason Return / Refund Request then select Specific queue followed by the Returns and Support Queue.  Click Create.</p>
+<p class="lab-step" markdown="1">93. On the Add wrap-up reason page, Create the Wrap up reason Return and Refund Request then select Specific queue followed by the Returns and Support Queue.  Click Create.</p>
 
 ![Screenshot](./assets/image162.png)
 
@@ -240,7 +240,7 @@ We will use the below Wrap-up reasons for the Agent(s) to select for the Returns
 
 ![Screenshot](./assets/image154.png)
 
-<p class="lab-step" markdown="1">98. From here you can see the assigned wrap-up reasons and the default option (in this example, Return / Refund Request). Enable the Wrap-up timer and the timer to 120 (2 minute) and then click on Save.</p>
+<p class="lab-step" markdown="1">98. From here you can see the assigned wrap-up reasons and the default option (in this example, Return and Refund Request). Enable the Wrap-up timer and the timer to 120 (2 minute) and then click on Save.</p>
 
 ![Screenshot](./assets/image164.png)
 
