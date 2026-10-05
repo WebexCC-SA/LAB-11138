@@ -2,11 +2,11 @@
 
 Enabling AI Features for Webex Calling
 
-<p class="lab-step" markdown="1">1. Navigate to “Organization Settings” in the left pane. In the “Filter by” section choose the option “AI”. This will help us to find the feature toggle that we are looking for. Feel free to browse through other options as needed.</p>
+<p class="lab-step" markdown="1">123. Navigate to “Organization Settings” in the left pane. In the “Filter by” section choose the option “AI”. This will help us to find the feature toggle that we are looking for. Feel free to browse through other options as needed.</p>
 
 ![Screenshot](./assets/image98.png)
 
-<p class="lab-step" markdown="1">2. Click “Customize AI Assistant &amp; AI Features” and scroll down to the “Calling AI Features”</p>
+<p class="lab-step" markdown="1">124. Click “Customize AI Assistant &amp; AI Features” and scroll down to the “Calling AI Features”</p>
 
 ![Screenshot](./assets/image99.png)
 
@@ -32,27 +32,27 @@ We are going to enable all the toggles here. A quick description about each of t
 
 <p class="lab-step" markdown="1">• Enable AI generated summaries for call recordings—Generates the transcripts and summaries for recorded calls.</p>
 
-<p class="lab-step" markdown="1">3. Enable all the toggles and click “Save”</p>
+<p class="lab-step" markdown="1">125. Enable all the toggles and click “Save”</p>
 
 ![Screenshot](./assets/image100.png)
 
-<p class="lab-step" markdown="1">4. Feel free to browse through and read the other Webex AI features for various other Webex workloads.</p>
+<p class="lab-step" markdown="1">126. Feel free to browse through and read the other Webex AI features for various other Webex workloads.</p>
 
-<p class="lab-step" markdown="1">5. We are now going to validate the AI settings for the user accounts and also enable “Webex Call Recording” for the user accounts.</p>
+<p class="lab-step" markdown="1">127. We are now going to validate the AI settings for the user accounts and also enable “Webex Call Recording” for the user accounts.</p>
 
-<p class="lab-step" markdown="1">6. Navigate to “Users” under Management and click on the user account “Taylor Bard”</p>
+<p class="lab-step" markdown="1">128. Navigate to “Users” under Management and click on the user account “Taylor Bard”</p>
 
 ![Screenshot](./assets/image101.png)
 
-<p class="lab-step" markdown="1">7. Click the “AI” tab and make sure all the toggles are showing as “Enabled”. If not, Enable them and click “Save”</p>
+<p class="lab-step" markdown="1">129. Click the “AI” tab and make sure all the toggles are showing as “Enabled”. If not, Enable them and click “Save”</p>
 
 ![Screenshot](./assets/image102.png)
 
-<p class="lab-step" markdown="1">8. Now click the “Calling” tab on the top and scroll down to the “Call Recording” option. Click the Call Recording option.</p>
+<p class="lab-step" markdown="1">130. Now click the “Calling” tab on the top and scroll down to the “Call Recording” option. Click the Call Recording option.</p>
 
 ![Screenshot](./assets/image103.png)
 
-<p class="lab-step" markdown="1">9. Enable the toggle for Recording. As soon as you enable the toggle, you will see a lot of options open up for Call Recording.</p>
+<p class="lab-step" markdown="1">131. Enable the toggle for Recording. As soon as you enable the toggle, you will see a lot of options open up for Call Recording.</p>
 
 <p class="lab-step" markdown="1">• Enable the toggle for “Always with Pause/Resume” – this will record all the calls with the option of Pause and Resume recording, so that the user can decide when to pause and resume the call recording.</p>
 
@@ -66,11 +66,11 @@ Click “Save” on the bottom right corner of the screen.
 
 ![Screenshot](./assets/image104.png)
 
-<p class="lab-step" markdown="1">10. Now repeat steps 6-9 for the other two users, Stefan Mauk and Rebekkah Barretta.</p>
+<p class="lab-step" markdown="1">132. Now repeat steps 6-9 for the other two users, Stefan Mauk and Rebekkah Barretta.</p>
 
 With those, both the user accounts are enabled for all the Webex Calling AI features and Webex Call Recording is enabled for both the user accounts.
 
 When you do the same in your production environment, you can make use of Templates or API’s to apply these settings to users in a bulk fashion.
 
-11.Now, we are ready for testing.
+133.Now, we are ready for testing.
 
