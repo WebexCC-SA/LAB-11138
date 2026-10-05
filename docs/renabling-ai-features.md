@@ -58,13 +58,11 @@ We are going to enable all the toggles here. A quick description about each of t
 
 <p class="lab-step" markdown="1">• Enable the call recording for both the Incoming and Outgoing calls.</p>
 
-<p class="lab-step" markdown="1">• Enable the option to record “Voice messaging”. Make sure the “Generate Transcript” option is enabled.</p>
 
 <p class="lab-step" markdown="1">• Enable the option “View and play call recordings, transcripts” and the option of “Download recordings and transcripts.</p>
 
 Click “Save” on the bottom right corner of the screen.
 
-![Screenshot](./assets/image104.png)
 
 <p class="lab-step" markdown="1">131. Now repeat steps 6-9 for the other two users, Stefan Mauk and Rebekkah Barretta.</p>
 
