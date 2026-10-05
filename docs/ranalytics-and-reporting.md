@@ -2,15 +2,15 @@
 
 In the previous section, you saw how the Agent and the Supervisor can look at the Analytics from the Customer Assist tab within the Webex app. In this section, you will see how you can get expanded Analytics and Reports from the Webex Control Hub.
 
-<p class="lab-step" markdown="1">308. In a browser, Log into Control Hub by going to admin.webex.com.</p>
+<p class="lab-step" markdown="1">191. In a browser, Log into Control Hub by going to admin.webex.com.</p>
 
-<p class="lab-step" markdown="1">309. Log into Control Hub as Charles Holland (<a href="mailto:cholland@cbXXX.dc-YY.com">cholland@cbXXX.dc-YY.com</a>)Refer to the Getting started section for credentials.</p>
+<p class="lab-step" markdown="1">192. Log into Control Hub as Charles Holland (<a href="mailto:cholland@cbXXX.dc-YY.com">cholland@cbXXX.dc-YY.com</a>)Refer to the Getting started section for credentials.</p>
 
-<p class="lab-step" markdown="1">310. Click on Analytics under Monitoring, then click Customer Assist.</p>
+<p class="lab-step" markdown="1">193. Click on Analytics under Monitoring, then click Customer Assist.</p>
 
 ![Screenshot](./assets/image137.png)
 
-<p class="lab-step" markdown="1">311. There are three Customer Assist Call Queue Analytics pages.</p>
+<p class="lab-step" markdown="1">194. There are three Customer Assist Call Queue Analytics pages.</p>
 
 <p class="lab-step" markdown="1">• Queue Stats: There are call queue KPIs and stats such as Total answered, Total abandoned calls, Percentage of abandoned calls and Avg. wait time. Along with this, there are charts and trends for Incoming calls, Avg. Call queue time, Top Call queues and a detailed Call queue stats table.</p>
 
@@ -20,11 +20,11 @@ In the previous section, you saw how the Agent and the Supervisor can look at th
 
 ![Screenshot](./assets/image138.png)
 
-<p class="lab-step" markdown="1">312. Explore the data in all 3 tabs</p>
+<p class="lab-step" markdown="1">195. Explore the data in all 3 tabs</p>
 
-<p class="lab-step" markdown="1">313. The analytics data can also be presented as reports, to access them click on Reports in the Monitoring section then select Templates.</p>
+<p class="lab-step" markdown="1">196. The analytics data can also be presented as reports, to access them click on Reports in the Monitoring section then select Templates.</p>
 
-<p class="lab-step" markdown="1">314. Expand the Customer Assist section to see the available reports</p>
+<p class="lab-step" markdown="1">197. Expand the Customer Assist section to see the available reports</p>
 
 <p class="lab-step" markdown="1">• Queue Stats: Provides details of call queues that have been set up in your organization. You can use this report to see the number of incoming calls to call queues and the status of those calls.</p>
 
@@ -34,23 +34,23 @@ In the previous section, you saw how the Agent and the Supervisor can look at th
 
 ![Screenshot](./assets/image139.png)
 
-<p class="lab-step" markdown="1">315. Click on Queue Stats or Queue Agent Stats to see a flyout pane from the of right of the screen which will show you the Key Metrics that are included in the report.</p>
+<p class="lab-step" markdown="1">198. Click on Queue Stats or Queue Agent Stats to see a flyout pane from the of right of the screen which will show you the Key Metrics that are included in the report.</p>
 
-<p class="lab-step" markdown="1">316. Click “Generate report” to see the different options on how you can collect Report on-demand or even schedule jobs for Report collection.</p>
+<p class="lab-step" markdown="1">199. Click “Generate report” to see the different options on how you can collect Report on-demand or even schedule jobs for Report collection.</p>
 
 ![Screenshot](./assets/image140.png)
 
-<p class="lab-step" markdown="1">317. From here you can set a schedule for the report to generate, for this lab you will run the report immediately so select Now and then Generate Report (you can leave the Report Period as the default.</p>
+<p class="lab-step" markdown="1">200. From here you can set a schedule for the report to generate, for this lab you will run the report immediately so select Now and then Generate Report (you can leave the Report Period as the default.</p>
 
 ![Screenshot](./assets/image141.png)
 
 <br>
 
-<p class="lab-step" markdown="1">318. You will see a pop-up informing you that the report is generating.  In a large organization this could take up to 24 hours but as there has not been much activity you should see the report withing a few minutes.  Click on OK.</p>
+<p class="lab-step" markdown="1">201. You will see a pop-up informing you that the report is generating.  In a large organization this could take up to 24 hours but as there has not been much activity you should see the report withing a few minutes.  Click on OK.</p>
 
 ![Screenshot](./assets/image142.png)
 
-<p class="lab-step" markdown="1">319. Click on the Reports list tab and you should see the report listed and available for download.</p>
+<p class="lab-step" markdown="1">202. Click on the Reports list tab and you should see the report listed and available for download.</p>
 
 ![Screenshot](./assets/image143.png)
 
