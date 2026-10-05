@@ -13,13 +13,13 @@ The agent and supervisor for this queue are
 <tr><td markdown="span">Rebekah Barretta</td><td markdown="span">rbarretta@cbXXX.dc-YY.com</td><td markdown="span">Agent</td><td markdown="span">Returns and Support</td><td markdown="span">Customer Assist</td></tr>
 </table></div>
 
-<p class="lab-step" markdown="1">214. In the services section, select Customer Assist under Services, then Queues. Click Manage and Add. The Queue wizard will initiate.</p>
+<p class="lab-step" markdown="1">63. In the services section, select Customer Assist under Services, then Queues. Click Manage and Add. The Queue wizard will initiate.</p>
 
 ![Screenshot](./assets/image156.png)
 
 <br>
 
-<p class="lab-step" markdown="1">215. Enter the basic queue information as details in the following table, then click Next.</p>
+<p class="lab-step" markdown="1">64. Enter the basic queue information as details in the following table, then click Next.</p>
 
 <div class="lab-table" markdown="1"><table markdown="1">
 <tr><th markdown="span">Field</th><th markdown="span">Entry</th></tr>
@@ -34,13 +34,13 @@ The agent and supervisor for this queue are
 
 ![Screenshot](./assets/image157.png)
 
-<p class="lab-step" markdown="1">216. This queue will use Skills based routing and be configured for Longest Idle ring, Select the 2 options and click Next.</p>
+<p class="lab-step" markdown="1">65. This queue will use Skills based routing and be configured for Longest Idle ring, Select the 2 options and click Next.</p>
 
 ![Screenshot](./assets/image32.png)
 
 <br>
 
-<p class="lab-step" markdown="1">217. Enter the Settings as shown in the table below and click Next.</p>
+<p class="lab-step" markdown="1">66. Enter the Settings as shown in the table below and click Next.</p>
 
 Screen pop is a Customer Assist Feature. Enabling this feature will open/pop up a screen with the URL and variable chosen. Enable the Slider and click ‘Add New’ under Query Parameters. For this lab, fill in the following data
 
@@ -76,35 +76,35 @@ You might see the new “Auto Answer” settings in this page, read through it b
 
 <br>
 
-<p class="lab-step" markdown="1">218. We are now in the Announcements page. We will be building an AI Receptionist in the later part of the lab, which front faces the calls from PSTN. So we do not need another Welcome Message for this queue, we can leave the Welcome Message option disabled in this page. ![Screenshot](./assets/image35.png)</p>
+<p class="lab-step" markdown="1">67. We are now in the Announcements page. We will be building an AI Receptionist in the later part of the lab, which front faces the calls from PSTN. So we do not need another Welcome Message for this queue, we can leave the Welcome Message option disabled in this page. ![Screenshot](./assets/image35.png)</p>
 
-<p class="lab-step" markdown="1">219. Estimated wait message for Queued calls: Enable this slider and set a default Call Handling type. Based on the default Call Handling Time and the number of Agents logged-in/available, Webex Calling will automatically calculate the Estimated Wait Time. You can then choose to play the Queue position or the Wait time to the Caller. Also, there is an option to play high volume message.</p>
+<p class="lab-step" markdown="1">68. Estimated wait message for Queued calls: Enable this slider and set a default Call Handling type. Based on the default Call Handling Time and the number of Agents logged-in/available, Webex Calling will automatically calculate the Estimated Wait Time. You can then choose to play the Queue position or the Wait time to the Caller. Also, there is an option to play high volume message.</p>
 
 ![Screenshot](./assets/image36.png)
 
 <br>
 
-<p class="lab-step" markdown="1">220. Comfort Message: Enable this slider/option to play any Comfort message. This can be any promotion messages or info about product and services. There is an option to enter the time between comfort messages, and an option select default or custom greeting.</p>
+<p class="lab-step" markdown="1">69. Comfort Message: Enable this slider/option to play any Comfort message. This can be any promotion messages or info about product and services. There is an option to enter the time between comfort messages, and an option select default or custom greeting.</p>
 
 ![Screenshot](./assets/image37.png)
 
-<p class="lab-step" markdown="1">221. Comfort Message Bypass: Enable this option to bypass the comfort message if the wait time is less than ‘X’ seconds. Choose Default Greeting.</p>
+<p class="lab-step" markdown="1">70. Comfort Message Bypass: Enable this option to bypass the comfort message if the wait time is less than ‘X’ seconds. Choose Default Greeting.</p>
 
 ![Screenshot](./assets/image38.png)
 
-<p class="lab-step" markdown="1">222. Hold Music: As the name implies, this is the call queue’s Music on hold.</p>
+<p class="lab-step" markdown="1">71. Hold Music: As the name implies, this is the call queue’s Music on hold.</p>
 
 ![Screenshot](./assets/image39.png)
 
-<p class="lab-step" markdown="1">223. Call whisper: Enable this option for the Agent answering queue call to hear a short whisper message to identify the queue. This is useful for the Agent to identify the queue. if they are logged in to multiple call queues and working on all of them.</p>
+<p class="lab-step" markdown="1">72. Call whisper: Enable this option for the Agent answering queue call to hear a short whisper message to identify the queue. This is useful for the Agent to identify the queue. if they are logged in to multiple call queues and working on all of them.</p>
 
 ![Screenshot](./assets/image40.png)
 
 <br>
 
-<p class="lab-step" markdown="1">224. Once you have chosen the options as shown in the above screenshots, please click ‘Next’ on bottom right corner.</p>
+<p class="lab-step" markdown="1">73. Once you have chosen the options as shown in the above screenshots, please click ‘Next’ on bottom right corner.</p>
 
-<p class="lab-step" markdown="1">225. Now we need to assign Rebekah Barretta as an agent in this queue.  Enable Show Customer Assist users only toggle to just filter the Customer Assist licensed users. Click on the Search users to add to queue  drop-down and select Rebekah. You can change the skill level from a range of 1 (Highest skilled agent) to 20 (lowest skilled agent).  For this queue, Rebekah is the highest skilled agent so keep the skill level as 1.<br></p>
+<p class="lab-step" markdown="1">74. Now we need to assign Rebekah Barretta as an agent in this queue.  Enable Show Customer Assist users only toggle to just filter the Customer Assist licensed users. Click on the Search users to add to queue  drop-down and select Rebekah. You can change the skill level from a range of 1 (Highest skilled agent) to 20 (lowest skilled agent).  For this queue, Rebekah is the highest skilled agent so keep the skill level as 1.<br></p>
 
 Enable allow agents to join or unjoin the queue, then click Next.
 
@@ -112,15 +112,15 @@ Enable allow agents to join or unjoin the queue, then click Next.
 
 <br>
 
-<p class="lab-step" markdown="1">226. Review your work and when you are happy with the configuration, click Create.</p>
+<p class="lab-step" markdown="1">75. Review your work and when you are happy with the configuration, click Create.</p>
 
 ![Screenshot](./assets/image159.png)
 
-<p class="lab-step" markdown="1">227. Success! Click Done.</p>
+<p class="lab-step" markdown="1">76. Success! Click Done.</p>
 
 ![Screenshot](./assets/image43.png)
 
-<p class="lab-step" markdown="1">228. You need to configure some additional queue settings. Click on your newly created Returns and Support queue to set the options.</p>
+<p class="lab-step" markdown="1">77. You need to configure some additional queue settings. Click on your newly created Returns and Support queue to set the options.</p>
 
 ![Screenshot](./assets/image160.png)
 
@@ -128,15 +128,15 @@ Enable allow agents to join or unjoin the queue, then click Next.
 
 Bounced Call
 
-<p class="lab-step" markdown="1">229. In the queue overview window, click Bounced Calls.</p>
+<p class="lab-step" markdown="1">78. In the queue overview window, click Bounced Calls.</p>
 
 ![Screenshot](./assets/image70.png)
 
-<p class="lab-step" markdown="1">230. Enable the Bounce calls after set number of rings and set the rings to 8</p>
+<p class="lab-step" markdown="1">79. Enable the Bounce calls after set number of rings and set the rings to 8</p>
 
-<p class="lab-step" markdown="1">231. Enable Bounce calls if an agent becomes unavailable</p>
+<p class="lab-step" markdown="1">80. Enable Bounce calls if an agent becomes unavailable</p>
 
-<p class="lab-step" markdown="1">232. Enable Alert agent if call on hold for a set wait time and set the timer to 30 seconds. Click Save.</p>
+<p class="lab-step" markdown="1">81. Enable Alert agent if call on hold for a set wait time and set the timer to 30 seconds. Click Save.</p>
 
 ![Screenshot](./assets/image46.png)
 
@@ -146,13 +146,13 @@ Stranded Call
 
 Stranded calls are calls that are left in a call queue when all agents assigned to the queue have signed out or are unavailable. Webex Calling gives us options on how we can handle calls that end up stranded
 
-<p class="lab-step" markdown="1">233. Go back the queue overview and select Stranded call settings from the queue policies section.</p>
+<p class="lab-step" markdown="1">82. Go back the queue overview and select Stranded call settings from the queue policies section.</p>
 
 ![Screenshot](./assets/image71.png)
 
-<p class="lab-step" markdown="1">234. Enable the Trigger policy when all agents are unreachable.</p>
+<p class="lab-step" markdown="1">83. Enable the Trigger policy when all agents are unreachable.</p>
 
-<p class="lab-step" markdown="1">235. Set the What to do with stranded calls option to Transfer to Phone Number and enter extension 4003 (the Voicemail box that is pre-created). Click Save</p>
+<p class="lab-step" markdown="1">84. Set the What to do with stranded calls option to Transfer to Phone Number and enter extension 4003 (the Voicemail box that is pre-created). Click Save</p>
 
 ![Screenshot](./assets/image48.png)
 
@@ -160,23 +160,23 @@ Night Service
 
 When night service is Enabled, the call queue will route calls differently during the hours when the queue is not in service.
 
-<p class="lab-step" markdown="1">236. Go back to the Overview window and choose Night Service under Queue policies.</p>
+<p class="lab-step" markdown="1">85. Go back to the Overview window and choose Night Service under Queue policies.</p>
 
 ![Screenshot](./assets/image72.png)
 
-<p class="lab-step" markdown="1">237. Enable night service and set the option Transfer to phone number and enter 4003 as the target number.</p>
+<p class="lab-step" markdown="1">86. Enable night service and set the option Transfer to phone number and enter 4003 as the target number.</p>
 
-<p class="lab-step" markdown="1">238. Set the Business Hours to WxOne</p>
+<p class="lab-step" markdown="1">87. Set the Business Hours to WxOne</p>
 
 ![Screenshot](./assets/image50.png)
 
 Callback
 
-<p class="lab-step" markdown="1">239. Click in the Call queue name (Assist Support) and click “Callback” as shown in the below screenshot</p>
+<p class="lab-step" markdown="1">88. Click in the Call queue name (Assist Support) and click “Callback” as shown in the below screenshot</p>
 
 ![Screenshot](./assets/image73.png)
 
-<p class="lab-step" markdown="1">240. Enable the slider for Callback functionality. You can also choose the minimum estimated time for the call back option. For this lab, you will leave it as 30 mins (default) and then click Save.</p>
+<p class="lab-step" markdown="1">89. Enable the slider for Callback functionality. You can also choose the minimum estimated time for the call back option. For this lab, you will leave it as 30 mins (default) and then click Save.</p>
 
 ![Screenshot](./assets/image52.png)
 
@@ -186,13 +186,13 @@ Callback
 
 Call recording allows you to record incoming and outgoing calls for your agents for the purpose of quality assurance, training, and compliance. You can configure different recording modes, including On-demand, Always, and Always with pause/resume, to suit your business needs and legal requirements.
 
-<p class="lab-step" markdown="1">241. Go back the queue overview scroll to the bottom and select Queue Recording.</p>
+<p class="lab-step" markdown="1">90. Go back the queue overview scroll to the bottom and select Queue Recording.</p>
 
 ![Screenshot](./assets/image74.png)
 
 <br>
 
-<p class="lab-step" markdown="1">242. Enter the Settings as shown in the table below and click Save.</p>
+<p class="lab-step" markdown="1">91. Enter the Settings as shown in the table below and click Save.</p>
 
 <div class="lab-table" markdown="1"><table markdown="1">
 <tr><th markdown="span">Field</th><th markdown="span">Entry</th></tr>
@@ -218,29 +218,29 @@ We will use the below Wrap-up reasons for the Agent(s) to select for the Returns
 
 <p class="lab-step" markdown="1">• Exchange / Replacement</p>
 
-<p class="lab-step" markdown="1">243. Go to Services &gt; Customer Assist &gt; Desktop Experience. You will see the previously created Wrap-up reasons from Sales and Orders queue. Click on Manage drop-down and click Add Wrap-up reason</p>
+<p class="lab-step" markdown="1">92. Go to Services &gt; Customer Assist &gt; Desktop Experience. You will see the previously created Wrap-up reasons from Sales and Orders queue. Click on Manage drop-down and click Add Wrap-up reason</p>
 
 ![Screenshot](./assets/image161.png)
 
-<p class="lab-step" markdown="1">244. On the Add wrap-up reason page, Create the Wrap up reason Return / Refund Request then select Specific queue followed by the Returns and Support Queue.  Click Create.</p>
+<p class="lab-step" markdown="1">93. On the Add wrap-up reason page, Create the Wrap up reason Return / Refund Request then select Specific queue followed by the Returns and Support Queue.  Click Create.</p>
 
 ![Screenshot](./assets/image162.png)
 
-<p class="lab-step" markdown="1">245. You will be taken back to the Wrap-up Reasons page.  Click Manage followed by Add Wrap-up Reason.</p>
+<p class="lab-step" markdown="1">94. You will be taken back to the Wrap-up Reasons page.  Click Manage followed by Add Wrap-up Reason.</p>
 
 ![Screenshot](./assets/image163.png)
 
-<p class="lab-step" markdown="1">246. Add 1 more wrap up reason, Exchange / Replacement like how you added the first one</p>
+<p class="lab-step" markdown="1">95. Add 1 more wrap up reason, Exchange / Replacement like how you added the first one</p>
 
-<p class="lab-step" markdown="1">247. Next to Set a default wrap-up time for the support queue- Under the Services section on the left panel select Customer Assist &gt; Queues and select the Returns and Support Queue as shown in the screenshot below</p>
+<p class="lab-step" markdown="1">96. Next to Set a default wrap-up time for the support queue- Under the Services section on the left panel select Customer Assist &gt; Queues and select the Returns and Support Queue as shown in the screenshot below</p>
 
 ![Screenshot](./assets/image160.png)
 
-<p class="lab-step" markdown="1">248. Go to Overview section and click Wrap-up reasons.</p>
+<p class="lab-step" markdown="1">97. Go to Overview section and click Wrap-up reasons.</p>
 
 ![Screenshot](./assets/image154.png)
 
-<p class="lab-step" markdown="1">249. From here you can see the assigned wrap-up reasons and the default option (in this example, Return / Refund Request). Enable the Wrap-up timer and the timer to 120 (2 minute) and then click on Save.</p>
+<p class="lab-step" markdown="1">98. From here you can see the assigned wrap-up reasons and the default option (in this example, Return / Refund Request). Enable the Wrap-up timer and the timer to 120 (2 minute) and then click on Save.</p>
 
 ![Screenshot](./assets/image164.png)
 
