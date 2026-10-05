@@ -1,0 +1,1778 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI">
+      
+      
+        <meta name="author" content="RAJAMANI Nallakaruppan">
+      
+      
+      
+        <link rel="prev" href="../rwrap-up-reason/">
+      
+      
+        <link rel="next" href="../rai-receptionist/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../template_assets/webex75.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Create Support queue - LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#create-the-returns-and-support-queue" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI" class="md-header__button md-logo" aria-label="LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Create Support queue
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../welcome/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About the Lab
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../lab-topology-and-scenario/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Lab Topology and Scenario
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../accessing-the-lab/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accessing the lab
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../healthcare/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Healthcare
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../retail/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Retail
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI" class="md-nav__button md-logo" aria-label="LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../welcome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About the Lab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-topology-and-scenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab Topology and Scenario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../accessing-the-lab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accessing the lab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Healthcare
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Healthcare
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../healthcare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Healthcare
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licensing-users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licensing users for Customer Assist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create-appointment-billing-queue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Appointment/ Billing queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../call-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling Call Recording for Appointment Billing queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding-supervisor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding Supervisor to Appointment Billing queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wrap-up-reason/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap up reason
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create-nurse-queue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Nurse queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-receptionist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Receptionist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enabling-ai-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling AI Features in Webex Calling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testing-and-verification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing and Verification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../queue-recordings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Access Customer assist queue recordings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analytics-and-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webex Calling Customer Assist Analytics and Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retail
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Retail
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../retail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rlicensing-users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licensing users for Customer Assist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rcreate-sales-order-queue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Sales/Order queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rcall-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling Call Recording for Sales/Order queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../radding-supervisor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding Supervisor to Sales/Order queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rwrap-up-reason/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap up reason
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Support queue
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Support queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#enable-recording-for-the-customer-assist-returns-and-support-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable Recording for the Customer Assist Returns and Support Queue
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrap-up-reason-and-wrap-up-timer-for-the-returns-and-support-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wrap-up reason and wrap-up timer for the Returns and Support Queue
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rai-receptionist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Receptionist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../renabling-ai-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling AI Features in Webex Calling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rtesting-and-verification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing and Verification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rqueue-recordings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Access Customer assist queue recordings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ranalytics-and-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webex Calling Customer Assist Analytics and Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="create-the-returns-and-support-queue">Create the Returns and Support Queue</h1>
+<p>We will now create/setup the Returns and Support queue, this will also be a Customer Assist queue.</p>
+<p>Returns and Support Queue description:</p>
+<p>You want this queue to route calls to our Agents based on Agent’s Skill level. When an Agent answers the call, you want to show a Screen popup to the Agent with Customer information. If the Agents on this queue are busy or the Caller waits for more than 30 secs in the queue, then you want to overflow the calls from this queue to a Group Voicemail box which is accessible by the Agents. You want our Agents to be able to Join or Unjoin the queue as they deem to. Finally, you want to give our end customers the option for Call Back, just in case if they don’t want to wait in the queue and get a Callback from the Agent.</p>
+<p>The agent and supervisor for this queue are</p>
+<div class="lab-table">
+<table>
+<tbody><tr>
+<th>Username</th>
+<th>Email</th>
+<th>Role</th>
+<th>Queue Name</th>
+<th>Queue Type</th>
+</tr>
+<tr>
+<td>Rebekah Barretta</td>
+<td>rbarretta@cbXXX.dc-YY.com</td>
+<td>Agent</td>
+<td>Returns and Support</td>
+<td>Customer Assist</td>
+</tr>
+</tbody></table>
+</div>
+<p class="lab-step">63. In the services section, select Customer Assist under Services, then Queues. Click Manage and Add. The Queue wizard will initiate.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image156.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image156.png"></a></p>
+<p><br></p>
+<p class="lab-step">64. Enter the basic queue information as details in the following table, then click Next.</p>
+<div class="lab-table">
+<table>
+<tbody><tr>
+<th>Field</th>
+<th>Entry</th>
+</tr>
+<tr>
+<td>Location</td>
+<td>dCloud-SJC(you might see dCloud-RTP, based on where your pod is hosted from)</td>
+</tr>
+<tr>
+<td>Queue Name</td>
+<td>Returns and Support</td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td>4001</td>
+</tr>
+<tr>
+<td>Number of calls in queue</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Direct line Caller ID name</td>
+<td>Display Name</td>
+</tr>
+<tr>
+<td>External caller ID phone number</td>
+<td>{Select Location Number}</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>English</td>
+</tr>
+</tbody></table>
+</div>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image157.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image157.png"></a></p>
+<p class="lab-step">65. This queue will use Skills based routing and be configured for Longest Idle ring, Select the 2 options and click Next.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image32.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image32.png"></a></p>
+<p><br></p>
+<p class="lab-step">66. Enter the Settings as shown in the table below and click Next.</p>
+<p>Screen pop is a Customer Assist Feature. Enabling this feature will open/pop up a screen with the URL and variable chosen. Enable the Slider and click ‘Add New’ under Query Parameters. For this lab, fill in the following data</p>
+<div class="lab-table">
+<table>
+<tbody><tr>
+<th>Field</th>
+<th>Entry</th>
+</tr>
+<tr>
+<td>Screen Pop</td>
+<td>{Enable}</td>
+</tr>
+<tr>
+<td>Screen Pop URL</td>
+<td><a href="https://www.truepeoplesearch.com/resultphone">https://www.truepeoplesearch.com/resultphone</a></td>
+</tr>
+<tr>
+<td>Screen Pop Desktop Label</td>
+<td>People Search</td>
+</tr>
+<tr>
+<td>Key 1</td>
+<td>Phoneno</td>
+</tr>
+<tr>
+<td>Value 1</td>
+<td>NewPhoneContact.ANI</td>
+</tr>
+</tbody></table>
+</div>
+<p>With this, every time an Agent answering the call from the queue – they will see a screen pop automatically open and show a True people search on the Calling party number (ANI).  This is just an example, similarly you can setup the URL to your own application to open customer data based on various variables.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image33.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image33.png"></a></p>
+<p>For the other settings, enter the below values</p>
+<div class="lab-table">
+<table>
+<tbody><tr>
+<th>Field</th>
+<th>Entry</th>
+</tr>
+<tr>
+<td>For new calls when the queue is full (Overflow)</td>
+<td>{Transfer to phone number}</td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td>4003 (this Voicemail box is pre-created)</td>
+</tr>
+<tr>
+<td>Send to voicemail</td>
+<td>{Disabled}</td>
+</tr>
+<tr>
+<td>Enable overflow after calls wait x seconds</td>
+<td>{Enabled}</td>
+</tr>
+<tr>
+<td>Seconds</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Play announcement before overflow processing</td>
+<td>{Disabled}</td>
+</tr>
+<tr>
+<td>Notification tones for agents </td>
+<td>Use organization’s default settings</td>
+</tr>
+</tbody></table>
+</div>
+<p>You might see the new “Auto Answer” settings in this page, read through it but we will not be using the feature for our today.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image34.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image34.png"></a></p>
+<p><br></p>
+<p class="lab-step">67. We are now in the Announcements page. We will be building an AI Receptionist in the later part of the lab, which front faces the calls from PSTN. So we do not need another Welcome Message for this queue, we can leave the Welcome Message option disabled in this page. <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image35.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image35.png"></a></p>
+<p class="lab-step">68. Estimated wait message for Queued calls: Enable this slider and set a default Call Handling type. Based on the default Call Handling Time and the number of Agents logged-in/available, Webex Calling will automatically calculate the Estimated Wait Time. You can then choose to play the Queue position or the Wait time to the Caller. Also, there is an option to play high volume message.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image36.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image36.png"></a></p>
+<p><br></p>
+<p class="lab-step">69. Comfort Message: Enable this slider/option to play any Comfort message. This can be any promotion messages or info about product and services. There is an option to enter the time between comfort messages, and an option select default or custom greeting.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image37.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image37.png"></a></p>
+<p class="lab-step">70. Comfort Message Bypass: Enable this option to bypass the comfort message if the wait time is less than ‘X’ seconds. Choose Default Greeting.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image38.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image38.png"></a></p>
+<p class="lab-step">71. Hold Music: As the name implies, this is the call queue’s Music on hold.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image39.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image39.png"></a></p>
+<p class="lab-step">72. Call whisper: Enable this option for the Agent answering queue call to hear a short whisper message to identify the queue. This is useful for the Agent to identify the queue. if they are logged in to multiple call queues and working on all of them.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image40.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image40.png"></a></p>
+<p><br></p>
+<p class="lab-step">73. Once you have chosen the options as shown in the above screenshots, please click ‘Next’ on bottom right corner.</p>
+<p class="lab-step">74. Now we need to assign Rebekah Barretta as an agent in this queue.  Enable Show Customer Assist users only toggle to just filter the Customer Assist licensed users. Click on the Search users to add to queue  drop-down and select Rebekah. You can change the skill level from a range of 1 (Highest skilled agent) to 20 (lowest skilled agent).  For this queue, Rebekah is the highest skilled agent so keep the skill level as 1.<br></p>
+<p>Enable allow agents to join or unjoin the queue, then click Next.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image158.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image158.png"></a></p>
+<p><br></p>
+<p class="lab-step">75. Review your work and when you are happy with the configuration, click Create.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image159.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image159.png"></a></p>
+<p class="lab-step">76. Success! Click Done.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image43.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image43.png"></a></p>
+<p class="lab-step">77. You need to configure some additional queue settings. Click on your newly created Returns and Support queue to set the options.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image160.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image160.png"></a></p>
+<p><br></p>
+<p>Bounced Call</p>
+<p class="lab-step">78. In the queue overview window, click Bounced Calls.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image70.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image70.png"></a></p>
+<p class="lab-step">79. Enable the Bounce calls after set number of rings and set the rings to 8</p>
+<p class="lab-step">80. Enable Bounce calls if an agent becomes unavailable</p>
+<p class="lab-step">81. Enable Alert agent if call on hold for a set wait time and set the timer to 30 seconds. Click Save.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image46.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image46.png"></a></p>
+<p><br></p>
+<p>Stranded Call</p>
+<p>Stranded calls are calls that are left in a call queue when all agents assigned to the queue have signed out or are unavailable. Webex Calling gives us options on how we can handle calls that end up stranded</p>
+<p class="lab-step">82. Go back the queue overview and select Stranded call settings from the queue policies section.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image71.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image71.png"></a></p>
+<p class="lab-step">83. Enable the Trigger policy when all agents are unreachable.</p>
+<p class="lab-step">84. Set the What to do with stranded calls option to Transfer to Phone Number and enter extension 4003 (the Voicemail box that is pre-created). Click Save</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image48.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image48.png"></a></p>
+<p>Night Service</p>
+<p>When night service is Enabled, the call queue will route calls differently during the hours when the queue is not in service.</p>
+<p class="lab-step">85. Go back to the Overview window and choose Night Service under Queue policies.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image72.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image72.png"></a></p>
+<p class="lab-step">86. Enable night service and set the option Transfer to phone number and enter 4003 as the target number.</p>
+<p class="lab-step">87. Set the Business Hours to WxOne</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image50.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image50.png"></a></p>
+<p>Callback</p>
+<p class="lab-step">88. Click in the Call queue name (Assist Support) and click “Callback” as shown in the below screenshot</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image73.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image73.png"></a></p>
+<p class="lab-step">89. Enable the slider for Callback functionality. You can also choose the minimum estimated time for the call back option. For this lab, you will leave it as 30 mins (default) and then click Save.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image52.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image52.png"></a></p>
+<p><br></p>
+<h3 id="enable-recording-for-the-customer-assist-returns-and-support-queue">Enable Recording for the Customer Assist Returns and Support Queue</h3>
+<p>Call recording allows you to record incoming and outgoing calls for your agents for the purpose of quality assurance, training, and compliance. You can configure different recording modes, including On-demand, Always, and Always with pause/resume, to suit your business needs and legal requirements.</p>
+<p class="lab-step">90. Go back the queue overview scroll to the bottom and select Queue Recording.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image74.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image74.png"></a></p>
+<p><br></p>
+<p class="lab-step">91. Enter the Settings as shown in the table below and click Save.</p>
+<div class="lab-table">
+<table>
+<tbody><tr>
+<th>Field</th>
+<th>Entry</th>
+</tr>
+<tr>
+<td>Record incoming and outgoing calls and voicemails or set recording announcements and notifications.</td>
+<td>{Enabled}</td>
+</tr>
+<tr>
+<td>Always</td>
+<td>{Enabled}</td>
+</tr>
+<tr>
+<td>Incoming calls</td>
+<td>{Enabled}</td>
+</tr>
+<tr>
+<td>Outgoing calls</td>
+<td>{Enabled}</td>
+</tr>
+<tr>
+<td>Play recording start/stop announcement for PSTN calls</td>
+<td>{Enabled}</td>
+</tr>
+<tr>
+<td>Play recording start/stop announcement for internal calls</td>
+<td>{Enabled}</td>
+</tr>
+<tr>
+<td>Generate Transcript</td>
+<td>{Enabled}</td>
+</tr>
+<tr>
+<td>Generate Summary and action items</td>
+<td>{Enabled}</td>
+</tr>
+</tbody></table>
+</div>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image54.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image54.png"></a></p>
+<p><br></p>
+<h3 id="wrap-up-reason-and-wrap-up-timer-for-the-returns-and-support-queue">Wrap-up reason and wrap-up timer for the Returns and Support Queue</h3>
+<p>We will use the below Wrap-up reasons for the Agent(s) to select for the Returns and Support queue</p>
+<p class="lab-step">• Return and Refund Request</p>
+<p class="lab-step">• Exchange / Replacement</p>
+<p class="lab-step">92. Go to Services &gt; Customer Assist &gt; Desktop Experience. You will see the previously created Wrap-up reasons from Sales and Orders queue. Click on Manage drop-down and click Add Wrap-up reason</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image161.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image161.png"></a></p>
+<p class="lab-step">93. On the Add wrap-up reason page, Create the Wrap up reason Return and Refund Request then select Specific queue followed by the Returns and Support Queue.  Click Create.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image162.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image162.png"></a></p>
+<p class="lab-step">94. You will be taken back to the Wrap-up Reasons page.  Click Manage followed by Add Wrap-up Reason.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image163.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image163.png"></a></p>
+<p class="lab-step">95. Add 1 more wrap up reason, Exchange / Replacement like how you added the first one</p>
+<p class="lab-step">96. Next to Set a default wrap-up time for the support queue- Under the Services section on the left panel select Customer Assist &gt; Queues and select the Returns and Support Queue as shown in the screenshot below</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image160.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image160.png"></a></p>
+<p class="lab-step">97. Go to Overview section and click Wrap-up reasons.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image154.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image154.png"></a></p>
+<p class="lab-step">98. From here you can see the assigned wrap-up reasons and the default option (in this example, Return and Refund Request). Enable the Wrap-up timer and the timer to 120 (2 minute) and then click on Save.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image164.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image164.png"></a></p>
+<p>Congratulations, now the Returns and Support queue is completed, it’s time to move onto the AI receptionist.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../rwrap-up-reason/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Wrap up reason">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Wrap up reason
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../rai-receptionist/" class="md-footer__link md-footer__link--next" aria-label="Next: AI Receptionist">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                AI Receptionist
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../template_assets/js/newLoad.js"></script>
+      
+        <script src="../template_assets/js/setInfo.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

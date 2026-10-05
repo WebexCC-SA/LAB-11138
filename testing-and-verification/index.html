@@ -1,0 +1,1585 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI">
+      
+      
+        <meta name="author" content="RAJAMANI Nallakaruppan">
+      
+      
+      
+        <link rel="prev" href="../enabling-ai-features/">
+      
+      
+        <link rel="next" href="../queue-recordings/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../template_assets/webex75.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Testing and Verification - LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#testing-and-verification" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI" class="md-header__button md-logo" aria-label="LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Testing and Verification
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../welcome/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About the Lab
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../lab-topology-and-scenario/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Lab Topology and Scenario
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../accessing-the-lab/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accessing the lab
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../healthcare/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Healthcare
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../retail/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Retail
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI" class="md-nav__button md-logo" aria-label="LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    LAB-11138 - Intelligent Interactions: Elevating Retail and Healthcare with Webex Calling AI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../welcome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About the Lab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-topology-and-scenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab Topology and Scenario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../accessing-the-lab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accessing the lab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Healthcare
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Healthcare
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../healthcare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Healthcare
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licensing-users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licensing users for Customer Assist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create-appointment-billing-queue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Appointment/ Billing queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../call-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling Call Recording for Appointment Billing queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding-supervisor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding Supervisor to Appointment Billing queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wrap-up-reason/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap up reason
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create-nurse-queue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Nurse queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-receptionist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Receptionist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enabling-ai-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling AI Features in Webex Calling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing and Verification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../queue-recordings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Access Customer assist queue recordings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analytics-and-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webex Calling Customer Assist Analytics and Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retail
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Retail
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../retail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rlicensing-users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licensing users for Customer Assist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rcreate-sales-order-queue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Sales/Order queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rcall-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling Call Recording for Sales/Order queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../radding-supervisor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding Supervisor to Sales/Order queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rwrap-up-reason/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap up reason
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rcreate-support-queue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Support queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rai-receptionist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Receptionist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../renabling-ai-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling AI Features in Webex Calling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rtesting-and-verification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing and Verification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rqueue-recordings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Access Customer assist queue recordings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ranalytics-and-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webex Calling Customer Assist Analytics and Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="testing-and-verification">Testing and Verification</h1>
+<p>You are now ready to test and experience the Webex Calling AI features.</p>
+<p>For this section you will use two Webex apps to demonstrate and test the Agent and the Supervisor features.</p>
+<p class="lab-step">134. Using Workstation1(wkst1), please open the Webex app. The Webex app is pre-installed, and you should be able to find the application in the Desktop. Double-click to open the Webex app. You will use the Webex app in Workstation1 for Agent Taylor Bard and Workstation2 for Supervisor Stefan Mauk.</p>
+<p class="lab-step">135. In the Webex Login screen, click Sign in</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image105.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image105.png"></a></p>
+<p class="lab-step">136. Enter Taylor Bard’s email address. The email will be tbard@cbXXX.dc-YY.com. Click Next.</p>
+<p class="lab-step">137. Enter the password for Taylor, it should be in the dCloudZZZZ!.</p>
+<p class="lab-step">138. Refer to the Getting started section to get the credentials. The domain and password are same for all the users (only the username changes).</p>
+<p class="lab-step">139. If you see a Warning message about Webex app version needs to be updated, click “Close”.</p>
+<p class="lab-step">140. Click “Ok” in the Emergency Calling Notification pop-up. (Please do not dial 911 from this Webex app)</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image106.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image106.png"></a></p>
+<p class="lab-step">141. Click the “Customer Assist” icon in the left pane of the Webex app as shown below. You will then see the Customer Assist window of this user.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note: Taylor is assigned as an Agent of the Appointment / Billing queue, so the Customer Assist Window you are seeing is the Agent screen.</p>
+</div>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image107.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image107.png"></a></p>
+<p>You can see the Agent state as ‘Available’ in the bottom of the Webex app, if you click the ‘Available’ option you can see Taylor is signed in to the Sales queue.</p>
+<p>There are few options here for the Agent. First, Agent Status – if you click on the drop-down, you can see the different states that the Agent can choose. Available, Unavailable and Wrapping-up. Do not change the Agent state but go through/review the options the Agent has. Click Available after reviewing the options.</p>
+<p>Available – The agent is ready to receive calls from queues.</p>
+<p>Unavailable – The agent is not available to receive calls from queues.</p>
+<p>Wrapping Up – The agent is in the Wrapping up state after a call and not available to receive new calls from the queue</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image108.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image108.png"></a></p>
+<p class="lab-step">142. Go back to the dCloud Session detail page and click and on “Remote Desktop” for WKST2.</p>
+<p class="lab-step">143. Open the Webex app in the Desktop of WKST2.</p>
+<p class="lab-step">144. Click “Sign in” in the Webex app screen.</p>
+<p class="lab-step">145. Stefan Mauk is the Supervisor for the Appointment / Billing queue you created. Enter the Email address of the user Stefan, it will be smauk@cbXXX.dc-YY.com, get the credentials from Getting Started section. The domain and password are same for all the users (only the username changes).</p>
+<p class="lab-step">146. <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image109.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image109.png"></a></p>
+<p class="lab-step">147. Enter the password for user Stefan. It is dCloudZZZZ!, where ZZZZ is the SessionID. (It is the same password that you used for the previous user Taylor). If you are still not sure, refer to the Getting started page for ZZZZ value then click Sign In.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image110.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image110.png"></a></p>
+<p class="lab-step">148. If you see a Warning message about Webex app version needs to be updated, click “Close”.</p>
+<p class="lab-step">149. Click “Ok” in the Emergency Calling Notification pop-up. (Please do not dial 911 from this Webex app)</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image111.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image111.png"></a></p>
+<p><br></p>
+<p class="lab-step">150. Click on the “Customer Assist” icon in the Webex app. Since Stefan is the Supervisor, he can see the Agents that are assigned to him. As the Supervisor, Stefan can see the agent’s (in this example, Taylor) current state and the duration of that state. <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image112.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image112.png"></a></p>
+<p class="lab-step">151. Go back to the dCloud Session detail page and click and on “Remote Desktop” for WKST3.</p>
+<p class="lab-step">152. In Workstation3 (wkst3), please open the Webex app. The Webex app is pre-installed, and you should be able to find the application in the Desktop. Double-click to open the Webex app. We will sign in here as Rebekah Barretta, our Nurse agent.</p>
+<p class="lab-step">153. In the Webex Login screen, click Sign in</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image105.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image105.png"></a></p>
+<p class="lab-step">154. Enter Rebekah Baretta’s email address. The email will be rbarretta@cbXXX.dc-YY.com. Click Next.</p>
+<p class="lab-step">155. Enter the password for Rebekah, it should be in the dCloudZZZZ!.</p>
+<p class="lab-step">156. Refer to the Getting started section to get the credentials. The domain and password are same for all the users (only the username changes).</p>
+<p class="lab-step">157. If you see a Warning message about Webex app version needs to be updated, click “Close”.</p>
+<p class="lab-step">158. Click “Ok” in the Emergency Calling Notification pop-up. (Please do not dial 911 from this Webex app)</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image106.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image106.png"></a></p>
+<p class="lab-step">159. Click the “Customer Assist” icon in the left pane of the Webex app as shown below. You will then see the Customer Assist window of this user.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note: Rebekah is assigned as an Agent of the Nurse, so the Customer Assist Window you are seeing is the Agent screen.</p>
+</div>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image113.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image113.png"></a></p>
+<p>You can see the Agent state as ‘Available’ in the bottom of the Webex app, if you click the ‘Available’ option you can see Rebekah is signed in to the Nurse queue.</p>
+<p class="lab-step">160. Navigate back to the Webex Control Hub in Workstation1. If the page is logged out, please use Charles’s credential to login to Webex Control Hub.</p>
+<p class="lab-step">161. Once logged in, navigate to PSTN &amp; Routing under Services and click on Numbers tab. Make a note of the Phone number assigned to “AI Receptionist – Healthcare AI Receptionist” as shown below.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image114.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image114.png"></a></p>
+<p class="lab-step">162. Make a call from your Cellphone to this “AI Receptionist – Healthcare AI Receptionist” number. You should hear the AI Receptionist answer the call and hear the AI Transparency message followed by the Welcome message.</p>
+<p class="lab-step">163. Remember we had uploaded a Knowledge Base document to the AI Receptionist. Lets go ahead and ask some questions to make sure our AI Receptionist is able to lookup the document and answer our queries.</p>
+<p class="lab-step">164. Ask question such as a). What insurances are accepted by the clinic? b). How do we setup appointments? C). What are the hours of the clinic? Make sure the AI Receptionist is able to answer the queries. You can cross-reference the Knowledge base to make sure you are getting the correct answers.</p>
+<p class="lab-step">165. When you are ready, ask the AI Receptionist to transfer your call to someone so that you can make an appointment or you have a query on the billing you received.</p>
+<p class="lab-step">166. The AI Receptionist will confirm your Transfer request and then will transfer your call to the Appointment / Billing queue.</p>
+<p class="lab-step">167. Go to Workstation1 RDP and you will see Taylor’s Webex app ringing. Click Answer in the pop-up as shown below. <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image115.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image115.png"></a></p>
+<p><br></p>
+<p class="lab-step">168. You will see the screen pop-up open in a web browser. We have setup a screen pop-up, when an agent answers the call – we are looking up the Caller’s number and showing up the result in the webpage.</p>
+<p class="lab-step">169. You can minimize this window</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image116.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image116.png"></a></p>
+<p class="lab-step">170. You will now see the Active Call Window with the queue name “Appointment Billing” and the Calling number (your cellphone number).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note: If you see a popup saying Microphone was not found, click ok</p>
+</div>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image117.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image117.png"></a></p>
+<p class="lab-step">171. Now, look at other features for the Agent. You can leave the Call-in mute and in connected state. Click in the Webex app, Customer Assist and you can see the “Live Contacts in queue trend” – this shows the Agent how many calls are currently in the queue (you can see the 1 call you place listed, the value goes to 0 as you answer)</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image118.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image118.png"></a></p>
+<p><br></p>
+<p class="lab-step">172. Now scroll down in the screen and you can see the “Live queue stats” section.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image119.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image119.png"></a></p>
+<p>This section shows the List of Call queues that the Agent Taylor is part of and the Live Stats of these queues such as Total Agents, Agents Staffed, Agents idle and Agents unavailable.</p>
+<p>There is also an option to Search/Filter by Queue name, when you click on the Search bar – you get an option to filter and look at the stats of a particular call queue.</p>
+<p>Now you have explored the agent desktop, let’s look at what the Supervisor can see.</p>
+<p class="lab-step">173. Please leave the call in connected state and move to Workstation2.</p>
+<p class="lab-step">174. In Stefan’s Webex app, you should be able to see the following screen. This shows us some info about the Agents.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image120.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image120.png"></a></p>
+<p>You can see Taylor’s Presence as “In a call”, his presence status shows “Connected” indicating he is in a call from the “Appointment Billing” queue and his Agent state is “Available”. This way, the Supervisor Stefan can see the list of his Agents and their live status.</p>
+<p class="lab-step">175. You can also see, the supervisor Stefan has some Actions buttons. The one indicated in the picture below is to allow Stefan to send a quick message to Taylor using Webex messaging.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image121.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image121.png"></a></p>
+<p class="lab-step">176. The next action button like shown below, this allows the Supervisor Join/Un-join the Agent from the queue by checking/un-checking the box <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image122.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image122.png"></a></p>
+<p><br></p>
+<p class="lab-step">177. Click on the three dots (…), to see more options for the Supervisor. The Supervisor can change the Agent state to Available or Unavailable. And, if the Supervisor needs to, they can Sign out the Agent from the queue.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image123.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image123.png"></a></p>
+<p class="lab-step">178. The first action button is the “Monitoring” action button. When you click this, the Supervisor can perform a Silent monitoring of the call between Agent and the End-customer.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image124.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image124.png"></a></p>
+<p><br></p>
+<p class="lab-step">179. Now click the Monitoring button and you should see the following Call window in Ricardo’s machine.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image125.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image125.png"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note: The Supervisor can listen to the call between Agent and the End-customer. But the Agent and the End-customer are completely unaware of the Supervisor’s presence in the call.</p>
+</div>
+<p class="lab-step">180. In the above Monitoring window, you can see you have various call control options. The first one is “Whisper Coach”. If you click that, then the Supervisor can do whisper coaching to the Agent.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image126.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image126.png"></a></p>
+<p><br></p>
+<p class="lab-step">181. The next action button is Barge. This will allow the Supervisor to barge-in to the call between the Agent and the End-customer. This way, the Supervisor can speak with the Agent and the End-customer if needed.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image127.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image127.png"></a></p>
+<p class="lab-step">182. You can then click the “Transcript” icon and “Start Transcript” option to view the real time transcription, as you speak – you should be able to see the transcription adding up.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image128.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image128.png"></a></p>
+<p class="lab-step">183. Hang up the call and you will be prompted to enter a Wrap up code.  Select a Wrap up reason from the list and click Submit Reason. These are the Wrap-up codes we have created for this queue.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image129.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image129.png"></a></p>
+<p>Similarly, if you would like you can call again to the AI Receptionist number and have the AI Receptionist transfer the call to the Nurse queue. Answer the call in Workstation3, in Rebekah’s Webex app.</p>
+<p><br></p>
+<p class="lab-step">184. Switch to Workstation 2 and under the Customer Assist tab you will see the queue activity in Stefan’s Webex app, you can see the queue activity based on Agents, Queues and Reports.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note: The Screenshot you see in the lab might not be the same as below because you do not have enough data from the queue you just created – the screenshots below is a reference on how it would look in an actual customer environment</p>
+</div>
+<p class="lab-step">185. On the Agents tab, click Statistics. Supervisors can review the statistics of agents over a period. Look at what your supervisor is seeing with how you are interacting within this lab. This screen shows the stats including Connected counts, Average handle time, Average inbound connected time, Average inbound hold time (scroll down to see all the data).</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image130.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image130.png"></a></p>
+<p class="lab-step">186. On the Agents tab, click Wrap up. Like statistics, the supervisors can see agent wrap up information, including Average wrap up duration and wrap up reason usage (scroll down to see all the data)</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image131.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image131.png"></a></p>
+<p><br></p>
+<p class="lab-step">187. Next click on the Queues tab.  From here the supervisor can see real time and historical queue information.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image132.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image132.png"></a></p>
+<p class="lab-step">188. Notice in many of these cards, the supervisor has the option to click on the ellipses and download to a csv file.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/image133.png" data-title="Screenshot" data-desc-position="top"><img alt="Screenshot" src="../assets/image133.png"></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../enabling-ai-features/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Enabling AI Features in Webex Calling">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Enabling AI Features in Webex Calling
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../queue-recordings/" class="md-footer__link md-footer__link--next" aria-label="Next: Access Customer assist queue recordings">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Access Customer assist queue recordings
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../template_assets/js/newLoad.js"></script>
+      
+        <script src="../template_assets/js/setInfo.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
